@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>DÉJÁ VU</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-sm-6">
+                <h2 class="fw-bold text-center text-warning py-5">¿De qué manera le gustaria trabajar junto a nosotros?</h2>
+                <p class="fw-bold fst-italic  text-justify  text-white">Como Promotor/a o Revendedor/a: </p> 
+                <p class="fw-bold fst-italic  text-justify text-white">*PROMOTOR/A: Persona que recibe comisiones por ventas realizadas a pedido sin invertir capital, por intermediacion. (Levanta pedidos)</p>
+                <p class=" fw-bold fst-italic text-justify text-white">*REVENDEDOR/A: Local comercial, kioscos,etc. Realiza la compra de los productos a precio especial y revende a precio público obteniendo ganancia</p>
+                <h3 class="fw-bold text-center text-warning" > ¡Ingrese sus datos y nos contactaremos con usted!</h3>
+
+            </div>
+
+            <div class="col-md-5 col-sm-6">
+                <form action="" method="post" class="formulario1" onsubmit="return validar()">
+                    <h2 class="fw-bold text-center text-warning py-5">REGISTRO PERSONAL</h2>
+                    <div class="form-group">
+                        <label><p class="text-center text-primary">NOMBRE</p></label>
+                        <input class="form-control" id="Nombre" name="nombre" type="text" placeholder="Nombre" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label><p class="text-center text-primary">EDAD</p></label>
+                        <input type="text" placeholder="Introduzca su edad" maxlength="2" id=edad name="edad" class="form-control" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label><p class="text-center text-primary">TELÉFONO</p></label>
+                        <input type="number" placeholder="Introduzca celular" id="teléfono" name="teléfono" class="form-control" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label><p class="text-center text-primary">EMAIL</p></label>
+                        <input placeholder="Introduzca su correo electronico" id="email" name="email" class="form-control" required> 
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label><p class="text-center text-primary">OCUPACIÓN</p></label>
+                        <input type="text" placeholder="Introduzca ocupación" maxlength="30" id="ocupación" name="ocupación" class="form-control" required >
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label><p class="text-center text-primary">¿POR QUÉ LE GUSTARIA TRABAJAR JUNTO A NOSOTROS?</p></label>
+                        <input type="text" maxlength="200" id="motivo" name="motivo" class="form-control" required >
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label><p class="text-center text-primary">PUESTO DE TRABAJO</p></label>
+                        <select name="cargo" id="cargo" class="form-control" >
+                            <option value="Promotor">Promotor/a</option>
+                            <option value="Revendedor">Revendedor/a</option>
+                        </select>
+                    </div>
+                    <br>
+                    <input type="submit" onclick= "return enviarFormulario"  class="btn btn-warning" value="ENVIAR">
+                </form>
+                <div id="error"></div>
+        
+
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/validar.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
